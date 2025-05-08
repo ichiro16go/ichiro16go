@@ -30,8 +30,3 @@
 
 ![AtCoder Trophies](https://atcoder-trophies.vercel.app/api/v1/atcoder?username=itsuki_54&theme=monokai)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./img/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./img/snake.svg">
-  <img alt="github contribution grid snake animation" src="./img/snake.svg">
-</picture>
