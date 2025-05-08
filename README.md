@@ -17,8 +17,6 @@
 
 ![typograssy](https://typograssy.deno.dev/api?text=ichiro16go)
 
-### My Portfolio
-https://itk-koshiishi.net/
 
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=ichiro16go&theme=2077&count_private=true)
 ![GitHub Streak](https://streak-stats.demolab.com/?user=ichiro16go&theme=tokyonight)
