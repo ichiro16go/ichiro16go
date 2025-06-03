@@ -7,32 +7,29 @@
 
 ## Profile
 
+### Hi 👋, I'm ichiro16go
 
-<p align="left">
-  <picture>
-        <source media="(prefers-color-scheme: dark)"  srcset="output/metrics.base.svg" width="400" />
-	<source media="(prefers-color-scheme: light)" srcset="output/metrics.base.svg" width="400" />
-	<img alt="github profile contributions chart"    src="https://raw.githubusercontent.com/ichiro16go/ichiro16go/output-3d-contrib/day.svg" />
-  </picture>
-  <picture>
-   	<source media="(prefers-color-scheme: dark)"  srcset="output/details.svg" width="400" />
-	<source media="(prefers-color-scheme: light)" srcset="output/details.svg" width="400" />
-	<img alt="github profile contributions chart"    src="https://raw.githubusercontent.com/ichiro16go/ichiro16go/output-3d-contrib/day.svg" />
-  </picture>
-</p>
+[![Github](https://img.shields.io/github/followers/ichiro16go?label=Follow&style=social)](https://github.com/ichiro16go)
 
-<p align="left" >
-	<picture>
-	  <source media="(prefers-color-scheme: dark)"  srcset="profile-3d-contrib/profile-night-rainbow.svg" width="700" />
-	  <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-season-animate.svg" width="700" />
-	  <img alt="github profile contributions chart"    src="https://raw.githubusercontent.com/ichiro16go/ichiro16go/output-3d-contrib/day.svg" />
-	</picture>
-</p>　
+ichiro16go is a cat 🐈
 
-<p align="left">
-<picture>
-  <source media="(prefers-color-scheme: light)"  srcset="output/metrics.plugin.achievements.compact.svg" width="400" />
-  <source media="(prefers-color-scheme: dark)"  srcset="output/metrics.plugin.achievements.compact.svg" width="400" />
- <img alt="github profile contributions chart"    src="https://raw.githubusercontent.com/ichiro16go/ichiro16go/output-3d-contrib/day.svg" />
-</picture>
+### 📊 Metrics
 
+![](https://raw.githubusercontent.com/ichiro16go/ichiro16go/main/metrics.plugin.reactions.svg)
+
+![](https://raw.githubusercontent.com/ichiro16go/ichiro16go/main/metrics.plugin.isocalendar.fullyear.svg)
+
+<!--
+**ichiro16go/ichiro16go** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
