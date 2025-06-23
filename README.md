@@ -15,7 +15,7 @@ ichiro16go is a cat 🐈
 
 ### 📊 Metrics
 
-![](https://raw.githubusercontent.com/ichiro16go/ichiro16go/main/metrics.plugin.reactions.svg)
+![](https://raw.githubusercontent.com/ichiro16go/ichiro16go/main/profile-3d-contrib/profile-green-dual.svg)
 
 ![](https://raw.githubusercontent.com/ichiro16go/ichiro16go/main/metrics.plugin.isocalendar.fullyear.svg)
 
