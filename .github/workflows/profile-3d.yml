@@ -21,7 +21,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           # README で表示している profile-night-view.svg のみを生成する。
-          # 設定値はアクション同梱の NightViewSettings.json と同一なので見た目は変わらない。
+          # 設定値はアクション同梱の NightViewSettings.json と同一。growingAnimation は
+          # デフォルト生成時の isForcedAnimation=true と等価にするために付けている。
           SETTING_JSON: .github/profile-3d-settings.json
       - name: Commit & Push
         run: |
