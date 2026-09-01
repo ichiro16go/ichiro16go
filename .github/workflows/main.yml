@@ -1,55 +1,33 @@
 name: Main
+
 on:
-  # run automatically every 24 hours
+  # 毎日 09:00 JST == 00:00 UTC
   schedule:
     - cron: "0 0 * * *"
 
-  # allows to manually run the job at any time
+  # 手動実行
   workflow_dispatch:
 
-  # run on every push on the main branch
-  # don't forget to change if you're using 'master' branch
-  push:
-    branches:
-    - main
+# NOTE: push トリガーは外している。
+# GitHub-Profile-3D-Contrib が毎日 main へ push するため、
+# push を拾うとその都度このジョブが走って Actions 時間を浪費していた。
+
+permissions:
+  contents: write
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-    - name: Install dependencies
-      run: |
-          sudo apt-get update
-          sudo apt-get install -y jq
-          sudo apt-get install -y containerd.io || sudo apt-get install -y containerd
-    - name: Default metrics
-      uses: lowlighter/metrics@latest
-      with:
-        filename: output/metrics.base.svg
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        base: header, activity, community, repositories, metadata
-    - name: Most used (with details)
-      uses: lowlighter/metrics@latest
-      with:
-        filename: output/details.svg
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        base: ""
-        repositories_skipped: chatbot-ui, gitHub-readme-stats-clone, PL0-compiler
-        plugin_languages: yes
-        plugin_languages_ignored: >-
-          tex, less, qmake, lex, gnuplot
-        plugin_languages_details: bytes-size, percentage
-        plugin_languages_limit: 8
-        plugin_followup: yes
-        plugin_followup_indepth: yes
-    - name: Compact display
-      uses: lowlighter/metrics@latest
-      with:
-        filename: output/metrics.plugin.achievements.compact.svg
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        base: ""
-        plugin_achievements: yes
-        plugin_achievements_only: >-
-          polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-          scripter, packager, explorer, infographile, manager
-        plugin_achievements_display: compact
-        plugin_achievements_threshold: X
+      # README が参照している metrics.plugin.isocalendar.fullyear.svg を
+      # リポジトリ直下に生成してコミットする。
+      # secrets.PERSONAL_ACCESS_TOKEN には read:user / repo スコープの
+      # 有効な PAT が必要（期限切れだと "Bad credentials" で失敗する）。
+      - name: Isometric commit calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
