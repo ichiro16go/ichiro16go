@@ -21,13 +21,13 @@ jobs:
     steps:
       # README が参照している metrics.plugin.isocalendar.fullyear.svg を
       # リポジトリ直下に生成してコミットする。
-      # secrets.PERSONAL_ACCESS_TOKEN には read:user / repo スコープの
+      # secrets.MY_PERSONAL_ACCESS_TOKEN には read:user / repo スコープの
       # 有効な PAT が必要（期限切れだと "Bad credentials" で失敗する）。
       - name: Isometric commit calendar
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.fullyear.svg
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
